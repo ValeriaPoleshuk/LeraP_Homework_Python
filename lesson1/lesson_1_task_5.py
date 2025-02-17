@@ -1,0 +1,13 @@
+def nam(let):
+    print(let, end='')
+nam("8")
+nam("8")
+nam("0")
+nam("0")
+nam("5")
+nam("5")
+nam("5")
+nam("3")
+nam("5")
+nam("3")
+nam("5")
