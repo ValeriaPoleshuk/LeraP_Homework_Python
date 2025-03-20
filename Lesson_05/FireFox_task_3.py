@@ -26,7 +26,6 @@ try:
     login_button = driver.find_element(By.XPATH, "//button[@type='submit']")
     login_button.click()
 
-
     # Пауза
     input("Нажмите Enter для завершения...")
 
