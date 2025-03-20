@@ -13,9 +13,9 @@ try:
 
     # Шаг 2: Пять раз кликнуть на кнопку "Add Element"
     add_button = driver.find_element(By.XPATH, "//button[text()='Add Element']")
-    for click_count in range(5):  # Используем понятное имя переменной
+    for click_count in range(5):
         add_button.click()
-        # Ожидание, пока кнопка "Add Element" станет кликабельной
+
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//button[text()='Add Element']")))
 
     # Шаг 3: Собрать список кнопок "Delete"
