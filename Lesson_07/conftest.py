@@ -2,7 +2,6 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-
 @pytest.fixture
 def driver():
     # Фикстура для инициализации и закрытия браузера.
@@ -16,3 +15,4 @@ def driver():
     yield driver  # Возвращает драйвер тесту
 
     driver.quit()  # Закрытие браузера после теста
+

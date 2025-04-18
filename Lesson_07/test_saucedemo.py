@@ -114,3 +114,4 @@ def test_checkout_total(driver):
 
     # Assertion
     assert total == expected_total, f"Expected total {expected_total}, but got {total}"
+

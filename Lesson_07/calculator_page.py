@@ -28,3 +28,4 @@ class CalculatorPage:
         return WebDriverWait(self.driver, timeout).until(
             EC.text_to_be_present_in_element(self.result_display, "15")
         )
+
