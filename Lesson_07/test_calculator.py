@@ -75,3 +75,4 @@ def test_calculator_with_delay(driver):
     assert result == "15", f"Ожидался '15', получено '{result}'"
     assert result == "15", f"Expected 15, got {result}"
 
+
