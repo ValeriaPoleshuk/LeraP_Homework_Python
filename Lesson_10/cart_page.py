@@ -4,6 +4,10 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class CartPage:
+    class CartPage:
+        """Класс для взаимодействия со страницей корзины покупок.
+        Позволяет управлять товарами в корзине и переходить к оформлению.
+        """
     def __init__(self, driver):
         """
         Инициализирует объект страницы корзины.
@@ -21,4 +25,3 @@ class CartPage:
             EC.element_to_be_clickable(self.checkout_button)
         )
         checkout_button.click()
-        

@@ -10,6 +10,12 @@ from checkout_page import CheckoutPage
 import allure
 
 class ShoppingCartTest(unittest.TestCase):
+    """Набор тестов для проверки функциональности корзины покупок.
+
+        Тестирует основные операции с корзиной: добавление/удаление товаров,
+        изменение количества, расчет общей стоимости и валидацию содержимого.
+        """
+
     def setUp(self):
         """Инициализируем веб-драйвер"""
         # Указываем путь до установленного GeckoDriver
@@ -73,4 +79,3 @@ class ShoppingCartTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-    

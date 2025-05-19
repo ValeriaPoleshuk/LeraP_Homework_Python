@@ -2,6 +2,9 @@ from selenium.webdriver.common.by import By
 
 
 class CheckoutPage:
+    """Класс для взаимодействия сщ страницей оформления заказа.
+    Позволяет получчить итоговую стоимость и разместить заказ.
+    """
     def __init__(self, driver):
         """
         Инициализирует объект страницы оформления заказа.
@@ -57,4 +60,3 @@ class CheckoutPage:
         """
         summary_total_label = self.driver.find_element(*self.summary_total_label)
         return summary_total_label.text.split(":")[1].strip()
-    

@@ -2,6 +2,8 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPage:
+    """Класс для взаимодействия со страницей авторизации.
+    Позволяет выполнять вход в систему."""
     def __init__(self, driver):
         """
         Инициализирует объект страницы авторизации.
@@ -37,4 +39,3 @@ class LoginPage:
         """
         login_button = self.driver.find_element(*self.login_button)
         login_button.click()
-        

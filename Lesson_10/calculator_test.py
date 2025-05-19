@@ -5,6 +5,8 @@ from slow_calculator_page import SlowCalculatorPage
 import allure
 
 class SlowCalculatorTest(unittest.TestCase):
+    """Набор тестов для проверки функциональности медленного калькулятора.
+"""
     def setUp(self):
         """Инициализирует драйвер браузера и загружает страницу калькулятора."""
         service = Service(r"C:\API UI\chromedriver.exe")
@@ -42,4 +44,3 @@ class SlowCalculatorTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-    
